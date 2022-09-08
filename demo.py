@@ -75,11 +75,13 @@ content = st_ace(
     auto_update=False,
     readonly=readonly,
 )
+
+device = torch.device("cpu")
 if content:
     transform = set_transform(content)
 process = st.button("Next Batch")
 image_batch = torch.stack(10 * [image])
-
+image_batch.to(device)
 transformeds = None
 try:
     transformeds = transform(image_batch)
