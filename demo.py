@@ -23,11 +23,12 @@ st.markdown("# Future_Lightroom_[Lr]_using_Augmentation")
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
+
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
 else:
-    im = Image.open("nature.jpg")
+    im = Image.open("pretty_bird.jpg")
 scaler = int(im.height / 2)
 st.sidebar.image(im, caption="Input Image", width=256)
 image = F.pil_to_tensor(im).float() / 255
@@ -42,6 +43,9 @@ if not gpu:
 else:
     if not IS_LOCAL:
         st.sidebar.markdown("(GPU Not available on hosted demo, try on your local!)")
+        # Credits   
+        st.sidebar.caption("Demo made by [Ceyda Cinarel](https://linktr.ee/ceydai)")
+        st.sidebar.markdown("Clone [Code](https://github.com/cceyda/kornia-demo)")
         device = torch.device("cpu")
     else:
         st.sidebar.markdown("Running on GPU~")
@@ -128,4 +132,9 @@ if transformeds is not None:
         i = i % 4
         cols[i].image(F.to_pil_image(x), use_column_width=True)
 
-
+st.markdown(
+    "There are a lot more transformations available: [Documentation](https://kornia.readthedocs.io/en/latest/augmentation.module.html)"
+)
+st.markdown(
+    "Kornia can do a lot more than augmentations~ [Check it out](https://kornia.readthedocs.io/en/latest/introduction.html#highlighted-features)"
+)
