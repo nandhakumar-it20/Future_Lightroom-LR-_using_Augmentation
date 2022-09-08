@@ -35,9 +35,17 @@ image = F.pil_to_tensor(im).float() / 255
 
 # batch size is just for show
 batch_size = st.sidebar.slider("batch_size", min_value=4, max_value=16,value=8)
-
-st.sidebar.markdown("With Kornia you do ops on the GPU!")
-device = torch.device("cpu")
+gpu = st.sidebar.checkbox("Use GPU!", value=True)
+if not gpu:
+    st.sidebar.markdown("With Kornia you do ops on the GPU!")
+    device = torch.device("cpu")
+else:
+    if not IS_LOCAL:
+        st.sidebar.markdown("(GPU Not available on hosted demo, try on your local!)")
+        device = torch.device("cpu")
+    else:
+        st.sidebar.markdown("Running on GPU~")
+        device = torch.device("cuda:0")
 
 predefined_transforms = [
     """
@@ -120,9 +128,4 @@ if transformeds is not None:
         i = i % 4
         cols[i].image(F.to_pil_image(x), use_column_width=True)
 
-st.markdown(
-    "There are a lot more transformations available: [Documentation](https://kornia.readthedocs.io/en/latest/augmentation.module.html)"
-)
-st.markdown(
-    "Kornia can do a lot more than augmentations~ [Check it out](https://kornia.readthedocs.io/en/latest/introduction.html#highlighted-features)"
-)
+
