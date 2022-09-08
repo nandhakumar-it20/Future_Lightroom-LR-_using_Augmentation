@@ -7,18 +7,15 @@ from torchvision.utils import make_grid
 from streamlit_ace import st_ace
 from PIL import Image
 
-IS_LOCAL = False #Change this
-
+IS_LOCAL = False
 @st.cache(suppress_st_warning=True)
 def set_transform(content):
-    #     st.write("set transform")
     try:
         transform = eval(content, {"kornia": kornia, "nn": nn}, None)
     except Exception as e:
         st.write(f"There was an error: {e}")
         transform = nn.Sequential()
     return transform
-
 st.markdown("# Kornia Augmentations Demo")
 st.sidebar.markdown(
     "[Kornia](https://github.com/kornia/kornia) is a *differentiable* computer vision library for PyTorch."
@@ -32,8 +29,6 @@ scaler = int(im.height / 2)
 st.sidebar.image(im, caption="Input Image", width=256)
 image = F.pil_to_tensor(im).float() / 255
 
-
-# batch size is just for show
 batch_size = st.sidebar.slider("batch_size", min_value=4, max_value=16,value=8)
 gpu = st.sidebar.checkbox("Use GPU!", value=True)
 if not gpu:
@@ -41,8 +36,7 @@ if not gpu:
     device = torch.device("cpu")
 else:
     if not IS_LOCAL:
-        st.sidebar.markdown("(GPU Not available on hosted demo, try on your local!)")
-        # Credits   
+        st.sidebar.markdown("(GPU Not available on hosted demo, try on your local!)") 
         st.sidebar.caption("Demo made by [Ceyda Cinarel](https://linktr.ee/ceydai)")
         st.sidebar.markdown("Clone [Code](https://github.com/cceyda/kornia-demo)")
         device = torch.device("cpu")
@@ -96,41 +90,20 @@ content = st_ace(
     readonly=readonly,
 )
 if content:
-    #     st.write(content)
     transform = set_transform(content)
-
-# st.write(transform)
-
-# with st.echo():
-#     transform = nn.Sequential(
-#        K.RandomAffine(360),
-#        K.ColorJitter(0.2, 0.3, 0.2, 0.3)
-#     )
-
 process = st.button("Next Batch")
-
-# Fake dataloader
 image_batch = torch.stack(batch_size * [image])
-
-
 image_batch.to(device)
 transformeds = None
 try:
     transformeds = transform(image_batch)
 except Exception as e:
     st.write(f"There was an error: {e}")
-    
-
-
-
 cols = st.columns(4)
-
-# st.image(F.to_pil_image(make_grid(transformeds)))
 if transformeds is not None:
     for i, x in enumerate(transformeds):
         i = i % 4
         cols[i].image(F.to_pil_image(x), use_column_width=True)
-
 st.markdown(
     "There are a lot more transformations available: [Documentation](https://kornia.readthedocs.io/en/latest/augmentation.module.html)"
 )
