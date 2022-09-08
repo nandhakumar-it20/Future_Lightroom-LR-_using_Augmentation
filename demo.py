@@ -78,7 +78,7 @@ content = st_ace(
 if content:
     transform = set_transform(content)
 process = st.button("Next Batch")
-image_batch = torch.stack(batch_size * [image])
+image_batch = torch.stack(10 * [image])
 image_batch.to(device)
 transformeds = None
 try:
