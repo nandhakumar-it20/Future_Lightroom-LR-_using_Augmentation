@@ -23,7 +23,7 @@ st.markdown("# Future_Lightroom_[Lr]_using_Augmentation")
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
-uploaded_file = st.sidebar.file_uploader("Choose a file", type="jpg", "png", "jpeg")
+uploaded_file = st.sidebar.file_uploader("Choose a file", type="jpg")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
 else:
