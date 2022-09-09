@@ -27,7 +27,7 @@ def add_bg_from_url():
     st.markdown(f"""
          <style>
          .stApp {{
-             background-image: url("https://img.freepik.com/premium-vector/white-abstract-background-3d-paper-style_23-2148403778.jpg?w=740");
+             background-image: url("https://img.freepik.com/free-photo/colorful-abstract-textured-background-design_53876-108265.jpg?w=740&t=st=1662727191~exp=1662727791~hmac=8505252ade5242732bc796de6307ca6d32bd2d5b0c70b606b0852cb1016c0af7");
              background-attachment: fixed;
              background-size: cover}}
              </style>""",unsafe_allow_html=True)
