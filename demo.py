@@ -34,6 +34,8 @@ if uploaded_file is not None:
 else:
     im = Image.open("nature.jpg")
 scaler = int(im.height / 2)
+with st.spinner('loading image...'):
+    time.sleep(2)
 st.sidebar.image(im, caption="Input Image", width=256)
 image = F.pil_to_tensor(im).float() / 255
 
