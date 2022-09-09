@@ -139,7 +139,7 @@ if transformeds is not None:
         i = i % 4
         cols[i].image(F.to_pil_image(x), use_column_width=True)
 
-st.success('Image Enhanced successfully!')
+st.success('Image Enhanced successfully!', icon="✅")
 
 
 
