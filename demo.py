@@ -109,8 +109,8 @@ if content:
 #     )
 
 process = st.button("Next Batch")
-    with st.spinner('Generating...'):
-        time.sleep(2)
+with st.spinner('Generating...'):
+    time.sleep(2)
 # Fake dataloader
 image_batch = torch.stack(batch_size * [image])
 
