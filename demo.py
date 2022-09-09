@@ -23,7 +23,7 @@ def set_transform(content):
 
 st.header("Future Lightroom [Lr] using Augmentation")
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [MIDNIGHT HACKER]', icon="ℹ️")
+st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [MIDNIGHT HACKER]')
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
