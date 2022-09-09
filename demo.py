@@ -42,10 +42,7 @@ if not gpu:
     device = torch.device("cpu")
 else:
     if not IS_LOCAL:
-        st.sidebar.markdown("(GPU Not available on hosted demo, try on your local!)")
-        # Credits   
-        st.sidebar.caption("Demo made by [Ceyda Cinarel](https://linktr.ee/ceydai)")
-        st.sidebar.markdown("Clone [Code](https://github.com/cceyda/kornia-demo)")
+        st.sidebar.markdown("(GPU Not available on hosted project, try on your local!)")
         device = torch.device("cpu")
     else:
         st.sidebar.markdown("Running on GPU~")
@@ -132,9 +129,3 @@ if transformeds is not None:
         i = i % 4
         cols[i].image(F.to_pil_image(x), use_column_width=True)
 
-st.markdown(
-    "There are a lot more transformations available: [Documentation](https://kornia.readthedocs.io/en/latest/augmentation.module.html)"
-)
-st.markdown(
-    "Kornia can do a lot more than augmentations~ [Check it out](https://kornia.readthedocs.io/en/latest/introduction.html#highlighted-features)"
-)
