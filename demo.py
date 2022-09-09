@@ -23,7 +23,7 @@ def set_transform(content):
 
 st.header("Future Lightroom [Lr] using Augmentation")
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info("Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [Daisi Hackathon]")
+st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [MIDNIGHT HACKER]', icon="ℹ️")
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
@@ -34,8 +34,6 @@ if uploaded_file is not None:
 else:
     im = Image.open("nature.jpg")
 scaler = int(im.height / 2)
-with st.spinner('loading image...'):
-    time.sleep(2)
 st.sidebar.image(im, caption="Input Image", width=256)
 image = F.pil_to_tensor(im).float() / 255
 
