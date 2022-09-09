@@ -1,4 +1,7 @@
 # Future_Lightroom_Lr_using_Augmentation [Computer Vision]
+![1](https://user-images.githubusercontent.com/113059991/189335729-9efb0d38-eede-4506-88f5-da16698076b0.JPG)
+
+![2](https://user-images.githubusercontent.com/113059991/189335759-5a736351-c5fa-4deb-94bc-e0dc49a25b29.JPG)
 
 
 
