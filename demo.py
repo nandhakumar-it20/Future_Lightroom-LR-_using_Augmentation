@@ -23,11 +23,16 @@ def set_transform(content):
 
 st.header("Future Lightroom [Lr] using Augmentation")
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [MIDNIGHT HACKER]')
+st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [Team MIDNIGHT HACKERS]')
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
-
+st.sidebar.markdown(
+    "A Python Project by MIDNIGHT HACKERS"
+)
+st.sidebar.markdown(
+    "Do visit our [Github Repository](https://github.com/nandhakumars4757/Future_Lightroom-LR-_using_Augmentation)"
+)
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
