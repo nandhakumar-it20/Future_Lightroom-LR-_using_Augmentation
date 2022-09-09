@@ -1,6 +1,7 @@
 # Future Lightroom Lr using Augmentation [Computer Vision]
 We have developed an Image processing and enhancing python app using konia in pytorch framework for the Daisi Hackathon (via Hackerearth)
 ### Team Details:
+#### Team Name: MIDNIGHT HACKER
 #### Team Leader: NANDHAKUMAR S 
 #### Members: SUJITH V, MOHAMED RAFEEK S
 #### Designation: Student at BANNARI AMMAN INSTITUTE OF TECHNOLOGY, SATHYAMANGALAM.
