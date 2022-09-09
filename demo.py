@@ -28,7 +28,7 @@ st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
 
-uploaded_file = st.sidebar.file_uploader("**_Choose a file_**")
+uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
 else:
@@ -84,7 +84,7 @@ selected_transform = st.selectbox(
     "Pick an augmentation pipeline below:", predefined_transforms
 )
 
-st.subheader("Transform the values of degree,p,brightness,contrast,saturation and hue to apply and enhance the image:")
+st.subheader("Transform the values of degree, p, brightness, contrast, saturation and hue to apply and enhance the image:")
 readonly = False
 content = st_ace(
     value=selected_transform,
@@ -110,7 +110,7 @@ if content:
 #     )
 
 process = st.button("Next Batch")
-with st.spinner('Generating...'):
+with st.spinner('Processing image...'):
     time.sleep(2)
 # Fake dataloader
 image_batch = torch.stack(batch_size * [image])
