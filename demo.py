@@ -30,7 +30,7 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     "A Python Project by MIDNIGHT HACKERS"
 )
-uploaded_file = st.sidebar.file_uploader("Choose a file")
+uploaded_file = st.sidebar.file_uploader("Choose a file", type='jpg')
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
 else:
