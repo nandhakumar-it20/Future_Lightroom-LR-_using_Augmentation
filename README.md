@@ -1,5 +1,5 @@
 # Future Lightroom Lr using Augmentation [Computer Vision]
-We have developed a Image processing and enhancing python app using konia in pytorch framework for the Daisi Hackathon (via Hackerearth)
+We have developed an Image processing and enhancing python app using konia in pytorch framework for the Daisi Hackathon (via Hackerearth)
 ### Team Details:
 #### Team Leader: NANDHAKUMAR S 
 #### Members: SUJITH V, MOHAMED RAFEEK S
