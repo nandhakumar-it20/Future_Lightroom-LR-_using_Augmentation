@@ -4,3 +4,4 @@ kornia
 torchvision~=0.13.1
 Pillow
 streamlit_ace
+imageio==2.21.2
