@@ -35,7 +35,7 @@ image = F.pil_to_tensor(im).float() / 255
 
 
 # batch size is just for show
-batch_size = st.sidebar.slider("batch_size", min_value=4, max_value=16,value=8)
+batch_size = st.sidebar.slider("batch_size", min_value=4, max_value=24,value=12)
 gpu = st.sidebar.checkbox("Use GPU!", value=True)
 if not gpu:
     st.sidebar.markdown("With Kornia you do ops on the GPU!")
@@ -77,10 +77,10 @@ nn.Sequential(
 ]
 
 selected_transform = st.selectbox(
-    "Pick an augmentation pipeline example:", predefined_transforms
+    "Pick an augmentation pipeline below:", predefined_transforms
 )
 
-st.write("Transform to apply:")
+st.subheader("Transform the values of degree,p,brightness,contrast,saturation and hue to apply and enhance the image:")
 readonly = False
 content = st_ace(
     value=selected_transform,
