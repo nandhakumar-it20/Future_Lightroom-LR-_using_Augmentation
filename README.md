@@ -30,10 +30,13 @@ We have developed an Image processing and enhancing python app using konia in py
 
 ## Screenshots of our App
 
-![Scrnsht - 1](https://user-images.githubusercontent.com/113059991/189396851-6812ee22-1d89-413b-8996-fec6a80810a2.JPG)
+![1](https://user-images.githubusercontent.com/113059991/189400169-d0d16924-74d1-489d-9002-b22f52c306c4.JPG)
 
 
-![2](https://user-images.githubusercontent.com/113059991/189355991-103a8497-2714-498b-b926-e0f6d1032515.JPG)
+![2](https://user-images.githubusercontent.com/113059991/189400196-9689bf18-11ce-4b5f-bd4c-a48777902878.JPG)
+
+
+![3](https://user-images.githubusercontent.com/113059991/189400219-0151297e-5a52-4b5e-b0dd-1b31ab798cc1.JPG)
 
 
 
