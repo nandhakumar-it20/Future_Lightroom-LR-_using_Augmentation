@@ -34,7 +34,7 @@ def add_bg_from_url():
 add_bg_from_url() 
 
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHAMED RAFEEK S [Team MIDNIGHT HACKER]')
+st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHAMED RAFEEK S [Team MIDNIGHT HACKER]', icon="©")
 
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
