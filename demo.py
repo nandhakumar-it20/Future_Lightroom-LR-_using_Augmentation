@@ -27,7 +27,7 @@ def add_bg_from_url():
     st.markdown(f"""
          <style>
          .stApp {{
-             background-image: url("https://www.freepik.com/free-vector/gradient-abstract-hexagon-shapes-background_18971391.htm#query=image%20background&position=7&from_view=search");
+             background-image: url("https://img.freepik.com/free-vector/gradient-abstract-hexagon-shapes-background_23-2149120168.jpg?w=740&t=st=1662726819~exp=1662727419~hmac=e353310f024c16167fdb0a92209f1ab348ec1c80542bd043b5f6e9b0a5485b18");
              background-attachment: fixed;
              background-size: cover}}
              </style>""",unsafe_allow_html=True)
