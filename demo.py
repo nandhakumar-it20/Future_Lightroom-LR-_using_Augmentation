@@ -22,17 +22,20 @@ def set_transform(content):
     return transform
 
 st.header("Future Lightroom [Lr] using Augmentation")
-st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S [Team MIDNIGHT HACKERS]')
+
 def add_bg_from_url():
     st.markdown(f"""
          <style>
          .stApp {{
-             background-image: url("https://www.freepik.com/free-vector/white-background-with-blue-tech-hexagon_4775334.htm#query=white%20background&position=31&from_view=keyword");
+             background-image: url("https://www.freepik.com/free-vector/gradient-abstract-hexagon-shapes-background_18971391.htm#query=image%20background&position=7&from_view=search");
              background-attachment: fixed;
              background-size: cover}}
              </style>""",unsafe_allow_html=True)
 add_bg_from_url() 
+
+st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
+st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S [Team MIDNIGHT HACKERS]')
+
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
