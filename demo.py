@@ -21,7 +21,7 @@ def set_transform(content):
 
 st.header("Future Lightroom [Lr] using Augmentation")
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info("Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [Daisi Hackathon]", icon="©")
+st.info("Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [Daisi Hackathon]")
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
@@ -108,7 +108,8 @@ if content:
 #     )
 
 process = st.button("Next Batch")
-
+    with st.spinner('Generating...'):
+        time.sleep(2)
 # Fake dataloader
 image_batch = torch.stack(batch_size * [image])
 
