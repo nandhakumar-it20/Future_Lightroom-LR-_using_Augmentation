@@ -23,7 +23,7 @@ def set_transform(content):
 
 st.header("Future Lightroom [Lr] using Augmentation")
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [Team MIDNIGHT HACKERS]')
+st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S [Team MIDNIGHT HACKERS]')
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
@@ -139,7 +139,7 @@ if transformeds is not None:
         i = i % 4
         cols[i].image(F.to_pil_image(x), use_column_width=True)
 
-st.success('Image Enhanced successfully!', icon="✅")
+st.success('Image Enhanced successfully!')
 
 
 
