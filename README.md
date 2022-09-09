@@ -1,17 +1,21 @@
+# Future_Lightroom_Lr_using_Augmentation [Computer Vision]
+
+
+
 ## Usage of Daisi
 
-It is recommended to use this application on the daisi platform itself using the link https://app.daisi.io/daisies/vijay/Augmentation%20using%20KORNIA/app.
+It is recommended to use this application on the daisi platform itself using the link https://app.daisi.io/daisies/nandhakumar/Future_Lightroom_LR_using_Augmentation/app
 However, you can still use your own editor using the below method:
 
 ### First, load the Packages:
 
 ```
 import pydaisi as pyd
-augmentation_using_kornia = pyd.Daisi("vijay/Augmentation using KORNIA")
+future_lightroom_lr_using_augmentation = pyd.Daisi("nandhakumar/Future_Lightroom_LR_using_Augmentation")
 ```
 ### Now, connect to Daisi and access the functions using:
 
 ```
-augmentation_using_kornia.set_transform(content).value
+future_lightroom_lr_using_augmentation.set_transform(content).value
 ```
 
