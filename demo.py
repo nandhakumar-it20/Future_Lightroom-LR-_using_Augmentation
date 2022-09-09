@@ -30,9 +30,6 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     "A Python Project by MIDNIGHT HACKERS"
 )
-st.sidebar.markdown(
-    "Do visit our [Github Repository](https://github.com/nandhakumars4757/Future_Lightroom-LR-_using_Augmentation)"
-)
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
@@ -56,6 +53,9 @@ else:
     else:
         st.sidebar.markdown("Running on GPU~")
         device = torch.device("cuda:0")
+st.sidebar.markdown(
+    "Do visit our [Github Repository](https://github.com/nandhakumars4757/Future_Lightroom-LR-_using_Augmentation)"
+)
 
 predefined_transforms = [
     """
