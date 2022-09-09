@@ -19,12 +19,14 @@ def set_transform(content):
         transform = nn.Sequential()
     return transform
 
-st.markdown("# Future_Lightroom_[Lr]_using_Augmentation")
+st.header("Future Lightroom [Lr] using Augmentation")
+st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
+st.info("Developed by NANDHAKUMAR S, SUJITH V, MOHEMED RAFEEK S, DHIVAKAR S [Daisi Hackathon]", icon="©")
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
 
-uploaded_file = st.sidebar.file_uploader("Choose a file")
+uploaded_file = st.sidebar.file_uploader("**_Choose a file_**")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
 else:
