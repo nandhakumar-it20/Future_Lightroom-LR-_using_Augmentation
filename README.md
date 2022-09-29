@@ -29,6 +29,26 @@ We have developed an Image processing and enhancing python app using konia in py
 
 • Random Resized Crop - A crop of the original image is made: the crop has a random area (H * W) and a random aspect ratio. This crop is finally resized to the given size.
 
+
+## Usage of Daisi
+
+It is recommended to use this application on the daisi platform itself using the link https://app.daisi.io/daisies/nandhakumar/Future_Lightroom_LR_using_Augmentation/app
+However, you can still use your own editor using the below method:
+
+### First, load the Packages:
+
+```
+import pydaisi as pyd
+future_lightroom_lr_using_augmentation = pyd.Daisi("nandhakumar/Future_Lightroom_LR_using_Augmentation")
+```
+### Now, connect to Daisi and access the functions using:
+#### Documented endpoints
+##### future_lightroom_using_augmentation
+```
+future_lightroom_lr_using_augmentation.future_lightroom_using_augmentation().value
+```
+
+
 ## Screenshots of our App
 
 ![1](https://user-images.githubusercontent.com/113059991/189400169-d0d16924-74d1-489d-9002-b22f52c306c4.JPG)
@@ -45,21 +65,4 @@ We have developed an Image processing and enhancing python app using konia in py
 
 ![Lr](https://user-images.githubusercontent.com/113059991/189353828-799dd5f7-6380-4e9d-8cf3-16a2128f0b0b.JPG)
 
-
-## Usage of Daisi
-
-It is recommended to use this application on the daisi platform itself using the link https://app.daisi.io/daisies/nandhakumar/Future_Lightroom_LR_using_Augmentation/app
-However, you can still use your own editor using the below method:
-
-### First, load the Packages:
-
-```
-import pydaisi as pyd
-future_lightroom_lr_using_augmentation = pyd.Daisi("nandhakumar/Future_Lightroom_LR_using_Augmentation")
-```
-### Now, connect to Daisi and access the functions using:
-
-```
-future_lightroom_lr_using_augmentation.set_transform(content).value
-```
 
