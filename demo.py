@@ -9,6 +9,11 @@ from torchvision.utils import make_grid
 from streamlit_ace import st_ace
 from PIL import Image
 
+def future_lightroom_using_augmentation():
+        """future_lightroom_lr_using_augmentation.add_bg_from_url().value"""
+        global future_lightroom_using_augmentation
+        if future_lightroom_using_augmentation: return future_lightroom_using_augmentation
+
 IS_LOCAL = False #Change this
 
 @st.cache(suppress_st_warning=True)
