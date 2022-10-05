@@ -14,6 +14,11 @@ def future_lightroom_using_augmentation():
         global future_lightroom_using_augmentation
         if future_lightroom_using_augmentation: return future_lightroom_using_augmentation
 
+def future_lightroom_using_augmentation_konia():
+        """future_lightroom_lr_using_augmentation.future_lightroom_using_augmentation().value"""
+        global future_lightroom_using_augmentation_konia
+        if future_lightroom_using_augmentation: return future_lightroom_using_augmentation_konia
+        
 IS_LOCAL = False #Change this
 
 @st.cache(suppress_st_warning=True)
