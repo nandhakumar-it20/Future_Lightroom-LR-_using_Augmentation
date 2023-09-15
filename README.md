@@ -2,15 +2,12 @@
 We have developed an Image processing and enhancing python app using konia in pytorch framework for the Daisi Hackathon (via Hackerearth)
 ### Team Details:
 #### Team Name: MIDNIGHT HACKER
-#### Team Leader: NANDHAKUMAR S 
-#### Members: SUJITH V, MOHAMED FARHUN M
-#### Designation: Student at BANNARI AMMAN INSTITUTE OF TECHNOLOGY, SATHYAMANGALAM.
+#### A project by NANDHAKUMAR S 
+#### Designation: Final Year Student at BANNARI AMMAN INSTITUTE OF TECHNOLOGY, SATHYAMANGALAM.
 #### Contact: +919488393947
-#### Mail: nandhakumarshanmugam.udt.4757@gmail.com
+#### Mail: nandhakumars.it20@bitsathy.ac.in
 
 ## What we used......
-• Daisi
-
 
 • Streamlit UI
 
