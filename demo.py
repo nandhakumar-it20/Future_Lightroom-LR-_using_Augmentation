@@ -44,13 +44,13 @@ def add_bg_from_url():
 add_bg_from_url() 
 
 st.caption(" An image processing and enhancing Computer Vision App using pytorch in Python")
-st.info('Developed by NANDHAKUMAR S, SUJITH V, MOHAMED FARHUN M [Team MIDNIGHT HACKER]')
+st.info('Developed by NANDHAKUMAR S')
 
 st.sidebar.markdown(
     "Enhance image using Computer Vision."
 )
 st.sidebar.markdown(
-    "A Python Project by MIDNIGHT HACKER"
+    "A Python Project by NANDHAKUMAR S"
 )
 uploaded_file = st.sidebar.file_uploader("Choose a file", type='jpg')
 if uploaded_file is not None:
