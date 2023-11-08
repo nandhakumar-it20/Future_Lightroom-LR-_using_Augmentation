@@ -52,9 +52,10 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     "A Python Project by NANDHAKUMAR S"
 )
-uploaded_file = st.sidebar.file_uploader("Choose a file", type='jpg')
+uploaded_file = st.file_uploader(label, type='jpg', accept_multiple_files=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
 if uploaded_file is not None:
     im = Image.open(uploaded_file)
+
 else:
     im = Image.open("nature.jpg")
 scaler = int(im.height / 2)
