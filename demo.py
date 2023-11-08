@@ -55,7 +55,7 @@ st.sidebar.markdown(
 
 uploaded_file = st.sidebar.file_uploader("Choose a file", type='jpg')
 if uploaded_file is not None:
-    im = Image.open("uploaded_file")
+    im = Image.open(uploaded_file)
 else:
     im = Image.open("nature.jpg")
 scaler = int(im.height / 2)
